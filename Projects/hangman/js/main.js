@@ -59,6 +59,7 @@ function getInput() {
         // while there are still letters to guess
         letters.innerHTML = answerArray.join(" ");
         let guess;
+        //create array for all of the guessed letters
         let guessedLetters = [];
 
         if (remainingLetters > 0) {
