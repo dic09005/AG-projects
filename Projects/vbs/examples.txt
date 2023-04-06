@@ -89,7 +89,7 @@ ElseIf User <> "Tabatha" Then
 End If
 
 
-''''Open NotePad and enter text''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''Open NotePad and enter text''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 
 ' set open = createobject("wscript.shell")
