@@ -1,0 +1,152 @@
+
+Option Explicit 'Helps with debugging if there is an error in the code
+Dim 'Declares a new variable
+MsgBox 'Opens a Message Box
+InputBox 'Opens an Input Box
+&vbLf& 'Line Break
+&vbTab& 'Line Tab
+
+'Simple Example ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' Dim x
+' x = 1
+' Dim y
+' y = 2
+' Dim z
+' z = x + y
+' MsgBox "The sum is" &z
+
+'VBScript Intro
+
+' Option Explicit 'This is a variable check
+
+' Dim firstNumber
+' firstNumber = InputBox("Please enter a number to add", "1st Number")
+' firstNumber = CInt(firstNumber)
+
+' Dim secondNumber
+' secondNumber = InputBox("Please enter the second number to add" &vbCrLf& "to the sum", "2nd Number",0)
+' secondNumber = CInt(secondNumber)
+
+' Dim sum
+' sum = firstNumber + secondNumber
+
+' MsgBox "The sum is" &sum
+
+'Simple Example ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'Option Explicit
+'Dim a
+
+'a=MsgBox("Guess a Button",vbAbortRetryIgnore)
+
+'If a=vbRetry Or a=vbAbort then
+'  MsgBox "correct"
+
+'ElseIf a=vbIgnore then
+' MsgBox "wrong"
+'End If
+
+'Simple Example ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'Could I write a program to open applications based on name????
+
+
+Option Explicit
+Dim User
+Dim Password
+Dim iURL 
+Dim aURL
+Dim bURL
+Dim objShell
+
+
+iURL = "https://bbsitimenet.cloud.centralservers.com/Login.aspx"
+aURL = "https://rob-dickson.github.io/AG-projects/"
+bURL = "https://www.youtube.com/"
+
+set objShell = CreateObject("Shell.Application")
+
+
+User = InputBox("What is your Username?","Who is the User?")
+
+If User = "Rob" Then
+    
+    Password = InputBox("What is your Password?", "Password")
+    IF Password = "Nerd" Then
+        objShell.ShellExecute "chrome.exe", aURL, "", "", 1
+        objShell.ShellExecute "chrome.exe", bURL, "", "", 1
+        objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+        MsgBox "Hello and welcome back" &User
+    ElseIf Password <> "Nerd" Then
+        MsgBox "Go away! You are not " &User, vbCritical
+    End If
+ElseIf User = "Tabatha" Then
+    objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+    MsgBox "Hello and welcome" &User
+ElseIf User <> "Tabatha" Then
+    MsgBox "Go away " &User, vbCritical
+End If
+
+
+''''Open NotePad and enter text''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+' set open = createobject("wscript.shell")
+
+' open.run "notepad.exe"
+' wscript.sleep 2000
+' open.sendkeys "Be yourself; everyone else is already taken."
+' open.sendkeys "{enter}"
+' wscript.sleep 1000
+' open.sendkeys "Oscar Wilde"
+' open.sendkeys "%fs"
+' wscript.sleep 500
+' open.sendkeys "newNote.txt"
+' wscript.sleep 500
+' open.sendkeys "{enter}"
+
+
+
+
+
+'VBScript Sort Array ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'Run in Cmd Using : CScript {Filename}
+
+' Option Explicit
+' On Error Resume Next
+' Dim Numbers(9)
+
+' FillNumbers
+' Sort
+
+' Sub FillNumbers
+'     Numbers(0) = 10
+'     Numbers(1) = 2
+'     Numbers(2) = 3
+'     Numbers(3) = 8
+'     Numbers(4) = 12
+'     Numbers(5) = 1
+'     Numbers(6) = 37
+'     Numbers(7) = 27
+'     Numbers(8) = 17
+' End Sub
+
+' Sub Sort
+'     Dim i, j, temp, strNumbers
+'     For i = 0 to 8
+'         For j = 0 to 8 - i 
+'             If Numbers(j) < Numbers(j+1) Then 'Swap them!
+'                 temp = Numbers(j)
+'                 Numbers(j) = Numbers(j+1)
+'                 Numbers(j+1) = temp
+'             End If
+'         Next
+'         strNumbers = ""
+'         For j = 0 to 9
+'             strNumbers = strNumbers & Numbers(j) & " "
+'         Next
+'         WScript.Echo "i = " &i& " The array is " & strNumbers
+'     Next
+' End Sub   

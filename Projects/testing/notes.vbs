@@ -28,6 +28,7 @@
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 'https://www.youtube.com/watch?v=Wd344ElH_Yg&list=PLc3SzDYhhiGXH8hEHtayRPdwAsddelkh6&index=2
+'www.deviantart.com
 
 'VBScript Procedures(Sub and Function)
 
@@ -287,42 +288,42 @@
 
 'Run in Cmd Using : CScript {Filename}
 
-Option Explicit
-On Error Resume Next
-Dim Numbers(9)
+' Option Explicit
+' On Error Resume Next
+' Dim Numbers(9)
 
-FillNumbers
-Sort
+' FillNumbers
+' Sort
 
-Sub FillNumbers
-    Numbers(0) = 10
-    Numbers(1) = 2
-    Numbers(2) = 3
-    Numbers(3) = 8
-    Numbers(4) = 12
-    Numbers(5) = 1
-    Numbers(6) = 37
-    Numbers(7) = 27
-    Numbers(8) = 17
-End Sub
+' Sub FillNumbers
+'     Numbers(0) = 10
+'     Numbers(1) = 2
+'     Numbers(2) = 3
+'     Numbers(3) = 8
+'     Numbers(4) = 12
+'     Numbers(5) = 1
+'     Numbers(6) = 37
+'     Numbers(7) = 27
+'     Numbers(8) = 17
+' End Sub
 
-Sub Sort
-    Dim i, j, temp, strNumbers
-    For i = 0 to 8
-        For j = 0 to 8 - i 
-            If Numbers(j) < Numbers(j+1) Then 'Swap them!
-                temp = Numbers(j)
-                Numbers(j) = Numbers(j+1)
-                Numbers(j+1) = temp
-            End If
-        Next
-        strNumbers = ""
-        For j = 0 to 9
-            strNumbers = strNumbers & Numbers(j) & " "
-        Next
-        WScript.Echo "i = " &i& " The array is " & strNumbers
-    Next
-End Sub    
+' Sub Sort
+'     Dim i, j, temp, strNumbers
+'     For i = 0 to 8
+'         For j = 0 to 8 - i 
+'             If Numbers(j) < Numbers(j+1) Then 'Swap them!
+'                 temp = Numbers(j)
+'                 Numbers(j) = Numbers(j+1)
+'                 Numbers(j+1) = temp
+'             End If
+'         Next
+'         strNumbers = ""
+'         For j = 0 to 9
+'             strNumbers = strNumbers & Numbers(j) & " "
+'         Next
+'         WScript.Echo "i = " &i& " The array is " & strNumbers
+'     Next
+' End Sub    
 
 
 'VBScript SQL CRUD ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -332,7 +333,41 @@ End Sub
 
 
 
+Option Explicit
+Dim User
+Dim Password
+Dim iURL 
+Dim aURL
+Dim bURL
+Dim objShell
 
+
+iURL = "https://bbsitimenet.cloud.centralservers.com/Login.aspx"
+aURL = "https://rob-dickson.github.io/AG-projects/"
+bURL = "https://www.youtube.com/"
+
+set objShell = CreateObject("Shell.Application")
+
+
+User = InputBox("What is your Username?","Who is the User?")
+
+If User = "Rob" Then
+    
+    Password = InputBox("What is your Password?", "Password")
+    IF Password = "Nerd" Then
+        objShell.ShellExecute "chrome.exe", aURL, "", "", 1
+        objShell.ShellExecute "chrome.exe", bURL, "", "", 1
+        objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+        MsgBox "Hello and welcome back" &User
+    ElseIf Password <> "Nerd" Then
+        MsgBox "Go away! You are not " &User, vbCritical
+    End If
+ElseIf User = "Tabatha" Then
+    objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+    MsgBox "Hello and welcome" &User
+ElseIf User <> "Tabatha" Then
+    MsgBox "Go away " &User, vbCritical
+End If
 
 
 
