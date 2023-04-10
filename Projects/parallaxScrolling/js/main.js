@@ -1,11 +1,17 @@
-function toggleMenu() {
 
+// Function is for toggling the menu button x or burger
+
+function toggleButton(x) {
+    x.classList.toggle("change");
+}
+
+// Function is for toggling the menu open 
+
+function toggleMenu() {
     document.getElementById('primaryNav').classList.toggle('open');
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
+// Make button to return to top visible after scrolling down
 
 let mybutton = document.getElementById('myBtn');
 
