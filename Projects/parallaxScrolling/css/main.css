@@ -1,0 +1,142 @@
+body, main, html {
+    margin: 0%;
+    height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.parallax1 {
+    background-image: url("../images/redRX7.jpg");
+}
+
+.parallax2 {
+    background-image: url("../images/godzilla.jpg");
+}
+
+.parallax3 {
+    background-image: url("../images/nissan240sunset.jpg");
+}
+
+.parallax4 {
+    background-image: url("../images/camberLuvin.jpg");
+}
+
+.overlay {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    background-image: url("../images/takumi.png");
+}
+
+nav {
+    position: fixed;
+    top: .25em;
+    z-index: 1;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    position: absolute;
+    background-image: linear-gradient(to bottom right, grey, whitesmoke);
+    text-align: start;
+    z-index: 1;
+    padding: .5em;
+    display: block;
+}
+
+nav ul.open a {
+    color: black;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: left;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .5em;
+}
+
+nav ul li.active a {
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: blueviolet;
+}
+
+nav button {
+    background: rgb(245, 245, 245, 0.6);
+    border-radius: 5px;
+    border: none;
+    font-size: 2em;    
+    color: black;
+    margin: .25em;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+div.text {
+    padding-top: 50%;
+}
+
+span.borders h2 {
+    background-color: rgb(240, 248, 255, .50);
+    text-transform: uppercase;
+    padding: 1em;
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+section {
+    padding: 1.5em;
+    background-color: rgb(60, 60, 60);
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 375px) {
+    nav ul.open {
+        position: absolute;
+        background-image: linear-gradient(to bottom right, grey, whitesmoke);
+        text-align: start;
+        z-index: 1;
+        padding: .5em;
+        display: inline-flex;
+    }
+}
