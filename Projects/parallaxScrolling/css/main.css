@@ -48,6 +48,7 @@ body, main, html {
     padding: .25em;
     margin-left: .5em;
     margin-top: .25em;
+    border-radius: 10px;
     cursor: pointer;
     background-color: rgb(240, 248, 255, .50);
   }
@@ -57,6 +58,7 @@ body, main, html {
     height: 5px;
     background-color: #333;
     margin: 6px 6px;
+    border-radius: 5px;
     transition: 0.4s;
   }
   
@@ -146,6 +148,10 @@ div.footer p {
     font-size: 1.25em;
     color: whitesmoke;
     z-index: 21;
+}
+
+p {
+    max-width: 600px;
 }
 
 section {
