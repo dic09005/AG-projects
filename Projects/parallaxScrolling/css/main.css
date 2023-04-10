@@ -74,6 +74,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: .5em;
+    font-weight: 500;
 }
 
 nav ul li.active a {
@@ -115,13 +116,15 @@ div.text {
     padding-top: 50%;
 }
 
-span.borders h2 {
+span.borders p {
     background-color: rgb(240, 248, 255, .50);
     text-transform: uppercase;
     padding: 1em;
     padding-top: 30px;
     text-align: center;
     margin-top: 0px;
+    font-weight: 600;
+    font-size: 1.25em;
 }
 
 section {
