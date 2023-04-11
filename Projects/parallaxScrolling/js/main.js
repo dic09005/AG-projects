@@ -112,3 +112,13 @@ function displayRandomCar(data) {
     };
 
 }
+
+// function to inject youTube video into dom
+
+const url = "https://www.youtube.com/embed/1H31hEtSzRE?autoplay=1&mute=1"
+
+const video = document.querySelector('#video');
+
+video.innerHTML = `<iframe max-width="480" height="auto" src="${url}"></iframe>`;
+
+
