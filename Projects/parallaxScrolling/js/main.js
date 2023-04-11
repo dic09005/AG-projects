@@ -50,6 +50,7 @@ fetch(requestURL)
   });
 
 // Make a function that can select a random make and model from the JSON file
+
 function displayRandomCar(data) {
 
     let makes = ["honda","nissan","toyota","mazda","mitsubishi","subaru"];
