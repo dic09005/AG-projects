@@ -30,7 +30,7 @@ function topFunction() {
 }
 
 // Get JSON data for div.car 
-const requestURL = 'json/cars.json';
+const requestURL = 'JSON/cars.json';
 const cards = document.querySelector('.card');
 
 // Create elements to add to the document
