@@ -1,0 +1,90 @@
+{
+    "honda": [
+        {
+            "make": "Honda",
+            "model": "Civic",
+            "years": "1972-present"
+        },
+        {
+            "make": "Honda",
+            "model": "Accord",
+            "years": "1976-present"
+        },
+        {
+            "make": "Honda",
+            "model": "Prelude",
+            "years": "1978-2001"
+        },
+        {
+            "make": "Honda",
+            "model": "S2000",
+            "years": "1999-2009"
+        },
+        {
+            "make": "Honda",
+            "model": "NSX",
+            "years": "1990-2022"
+        }
+
+    ],
+    "nissan": [
+        {
+            "make": "Nissan",
+            "model": "Skyline",
+            "years": "1957-present"
+        },
+        {
+            "make": "Nissan",
+            "model": "Z",
+            "years": "1969-present"
+        },
+        {
+            "make": "Nissan",
+            "model": "Silvia",
+            "years": "1975-2002"
+        }
+    ],
+    "toyota": [
+        {
+            "make": "Toyota",
+            "model": "Supra",
+            "years": "1978-present"
+        },
+        {
+            "make": "Toyota",
+            "model": "Corolla",
+            "years": "1966-present"
+        },
+        {
+            "make": "Toyota",
+            "model": "GR 86",
+            "years": "2013-present"
+        }
+    ],
+    "mazda": [
+        {
+            "make": "Mazda",
+            "model": "RX-7",
+            "years": "1978-2002"
+        },
+        {
+            "make": "Mazda",
+            "model": "RX-8",
+            "years": "2003-2012"
+        }
+    ],
+    "mitsubishi": [
+        {
+            "make": "Mitsubishi",
+            "model": "Lancer Evo",
+            "years": "1992-2016"
+        }
+    ],
+    "subaru": [
+        {
+            "make": "Subaru",
+            "model": "WRX",
+            "years": "1992-present"
+        }
+    ]
+}

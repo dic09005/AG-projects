@@ -35,9 +35,6 @@ body, main, html {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.overlay {
     background-image: url("../images/takumi.png");
     height: 100%;    
     z-index: 0;
@@ -212,6 +209,17 @@ section p {
   
   #myBtn:hover {
     background-color: #555;
+  }
+
+  .card {
+    position: absolute;
+    top: 3em;
+    background-color: rgb(85, 85, 85, 0.4);
+    border: 3px solid black;
+    max-width: 12em;
+    margin: 2em;
+    margin-top: 0;
+    padding: 1em;
   }
 
 @media only screen and (min-width: 480px) {
