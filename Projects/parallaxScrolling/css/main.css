@@ -214,6 +214,7 @@ section p {
   .card {
     position: absolute;
     top: 3em;
+    right: .25em;
     background-color: rgb(240, 248, 255, .50);
     border: 3px solid black;
     max-width: 12em;
@@ -246,6 +247,10 @@ section p {
     .overlay {
         display: none;
     }
+
+    .card {
+        right: 2em;
+      }
 }
 
 @media(max-width: 480px) {
