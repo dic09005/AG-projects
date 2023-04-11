@@ -214,12 +214,13 @@ section p {
   .card {
     position: absolute;
     top: 3em;
-    background-color: rgb(85, 85, 85, 0.4);
+    background-color: rgb(240, 248, 255, .50);
     border: 3px solid black;
     max-width: 12em;
     margin: 2em;
     margin-top: 0;
     padding: 1em;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
   }
 
 @media only screen and (min-width: 480px) {
