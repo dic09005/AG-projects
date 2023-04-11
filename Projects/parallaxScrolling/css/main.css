@@ -170,6 +170,7 @@ section {
     padding: 1.5em;
     background-color: rgb(60, 60, 60);
     color: whitesmoke;
+    display: block;
 }
 
 section h2 {
@@ -222,7 +223,11 @@ section p {
     margin-top: 0;
     padding: 1em;
     box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-  }
+}
+
+iframe {
+    text-align: center;
+}
 
 @media only screen and (min-width: 480px) {
 
