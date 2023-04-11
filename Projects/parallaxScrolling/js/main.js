@@ -113,7 +113,7 @@ function displayRandomCar(data) {
 
 }
 
-// function to inject youTube video into dom
+// inject youTube video URL into dom
 
 const url = "https://www.youtube.com/embed/1H31hEtSzRE?autoplay=1&mute=1"
 
