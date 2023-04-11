@@ -49,7 +49,7 @@ fetch(requestURL)
 
 function displayRandomCar(data) {
 
-    let makeList = [0,1,2,3,4];
+    let makeList = [0,1];
 
     const values = Object.values(makeList);
 
@@ -66,10 +66,16 @@ function displayRandomCar(data) {
     console.log(randomValue);
     console.log(Value);
 
+    let call1 = "data.";
+    let call2 = Value + "[" + randomValue + "]";
+    let call3 = ".make";
 
+    let fullCall = `${call1}${call2}${call3}`;
 
-    carMake.innerHTML = `<strong>Make: ${data.honda[randomValue].make}</strong>`;
-    carModel.innerHTML = `<strong>Model: ${data.honda[randomValue].model}</strong>`;
-    carYears.innerHTML = `<strong>Years: ${data.honda[randomValue].years}</strong>`;
+    console.log(fullCall);
+
+    carMake.innerHTML = `<strong>Make: ${fullCall}</strong>`;
+    carModel.innerHTML = `<strong>Model: ${fullCall}</strong>`;
+    carYears.innerHTML = `<strong>Years: ${fullCall}</strong>`;
 
 }
