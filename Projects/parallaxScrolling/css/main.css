@@ -50,9 +50,6 @@ body, main, html {
     background-color: rgb(240, 248, 255, .50);
 }
 
-.overlay p::after {
-}
-
 .navContainer {
     display: block;
     padding: .25em;
