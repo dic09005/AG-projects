@@ -14,7 +14,7 @@ function toggleMenu() {
 
 // Add event listener
 document.addEventListener("mousemove", parallax);
-const elem = document.querySelector("#parallax");
+const element = document.querySelector("#parallax");
 
 // Parallax Function
 function parallax(e) {
@@ -28,7 +28,7 @@ function parallax(e) {
     let _depth3 = `${50 - (_mouseX - _width) * 0.06}% ${50 - (_mouseY - _height) * 0.06}%`;
     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
     //console.log(x);
-    elem.style.backgroundPosition = x;
+    element.style.backgroundPosition = x;
 };
 
 parallax(e);
