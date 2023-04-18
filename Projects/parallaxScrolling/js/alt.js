@@ -1,4 +1,17 @@
 
+// Function is for toggling the menu button x or burger
+
+function toggleButton(x) {
+    x.classList.toggle("change");
+}
+
+// Function is for toggling the menu open 
+
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('open');
+}
+
+
 // Add event listener
 document.addEventListener("mousemove", parallax);
 const elem = document.querySelector("#parallax");
