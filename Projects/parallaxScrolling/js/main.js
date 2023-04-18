@@ -25,7 +25,7 @@ function scrollFunction() {
     }
   }
 
-function topFunction() {
+function toTop() {
   document.documentElement.scrollTop = 0;
 }
 
