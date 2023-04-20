@@ -14,11 +14,23 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <div class="card">
-            <p>Mystery... <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum ex odit doloribus possimus, omnis, eveniet quisquam recusandae, cupiditate praesentium voluptatibus assumenda maiores! Facilis ducimus, id dolorum ipsum corporis iste.</p>
-          </div>
+    <main class="weather">
+        <section class="weathercard">
+            <div class="weather" id="weather-data">
+                <h2>Location</h2>
+                <h2 id="city"><span></span></h2>
+                <p id="temp"><span></span></p>
+                <p id="feels_like"><span></span></p>
+                <p id="humidity"><span></span></p>
+                <p id="wind_speed"><span></span></p>
+                <p id="sunrise"><span></span></p>
+                <p id="sunset"><span></span></p>             
+                <img src="" alt="" id="icon"><span></span>
+                <p id="description"><span></span></p>   
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
