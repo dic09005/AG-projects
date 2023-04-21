@@ -75,7 +75,7 @@ function cityOrZip() {
 
   } else { 
     function getZipCode() {
-      let input = document.querySelector('#zipcode');
+      let input = document.querySelector('#location');
       let value = input.value;
       let savedValue = value;
     
