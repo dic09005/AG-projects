@@ -3,6 +3,7 @@ function cityOrZip() {
 
   const input = document.querySelector('#location').value
   let numbers = /^[0-9]+$/;
+  
   if(!input.match(numbers)) {
 
     function getCityName() {
@@ -40,11 +41,15 @@ function cityOrZip() {
       const sunset = document.querySelector('#sunset');
       const weatherIcon = document.querySelector('#icon');
       const description = document.querySelector('#description');
+
+      function capitalize(string) {
+        return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
+    }
     
       function displayWeather(data) {
-        city.innerHTML = `City: ${data.name}`;
-        temp.innerHTML = `Temp: ${data.main.temp.toFixed(0)}°F`;
-        feels_like.innerHTML = `Feels Like: ${data.main.feels_like.toFixed(0)}°F`;
+        city.innerHTML = `Weather in ${data.name}`;
+        temp.innerHTML = `Temp: ${data.main.temp.toFixed(0)}°`;
+        feels_like.innerHTML = `Feels Like: ${data.main.feels_like.toFixed(0)}°`;
         humidity.innerHTML = `Humidity: ${data.main.humidity.toFixed(0)}%`;
         wind_speed.innerHTML = `Wind Speed: ${data.wind.speed} mph`;
     
@@ -66,8 +71,7 @@ function cityOrZip() {
         const desc = data.weather[0].description;
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
-    
-        description.innerHTML = `Description: ${desc}`;
+        description.textContent = capitalize(desc);
       };
     
     };
@@ -110,9 +114,13 @@ function cityOrZip() {
       const sunset = document.querySelector('#sunset');
       const weatherIcon = document.querySelector('#icon');
       const description = document.querySelector('#description');
+
+      function capitalize(string) {
+        return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
+    }
     
       function displayWeather(data) {
-        city.innerHTML = `City: ${data.name}`;
+        city.innerHTML = `Weather in ${data.name}`;
         temp.innerHTML = `Temp: ${data.main.temp.toFixed(0)}°`;
         feels_like.innerHTML = `Feels Like: ${data.main.feels_like.toFixed(0)}°`;
         humidity.innerHTML = `Humidity: ${data.main.humidity.toFixed(0)}%`;
@@ -136,8 +144,7 @@ function cityOrZip() {
         const desc = data.weather[0].description;
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
-    
-        description.innerHTML = `Description: ${desc}`;
+        description.textContent = capitalize(desc);
       };
     
     };

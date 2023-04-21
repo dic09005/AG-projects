@@ -1,5 +1,6 @@
 body {
     background-image: url();
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div.main {
@@ -8,11 +9,6 @@ div.main {
     max-width: 20em;
     padding: 1em;
     margin-bottom: 1em;
-}
-
-div.input {
-    display: flex;
-    flex-direction: column;
 }
 
 label {
@@ -35,4 +31,19 @@ div.weather {
 
 input#submit {
     margin-top: 1em;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+input {
+    padding: .5em;
 }
