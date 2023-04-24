@@ -21,7 +21,7 @@ function cityOrZip() {
             const response = await fetch(url);
             if (response.ok) {
               const data = await response.json();
-              console.log(data);
+              //console.log(data);
               displayWeather(data);
               getAndDisplay(data);
             } else {
@@ -79,7 +79,7 @@ function cityOrZip() {
 
         let API = "AIzaSyBFwhu5GMslIWnZMlLT8ZGvnG-3tzrWOKM";
         let City = data.name;
-        console.log(City);
+        //console.log(City);
         
         let PhotoURL = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${City}&key=${API}&inputtype=textquery&fields=name,photos`;
         
@@ -89,7 +89,7 @@ function cityOrZip() {
               const response = await fetch(PhotoURL);
               if (response.ok) {
                 const newData = await response.json();
-                console.log(newData);
+                //console.log(newData);
                 displayImage(newData);
               } else {
                   throw Error(await response.text());
@@ -132,7 +132,7 @@ function cityOrZip() {
             const response = await fetch(url);
             if (response.ok) {
               const data = await response.json();
-              console.log(data);
+              //console.log(data);
               displayWeather(data);
               getAndDisplay(data)
             } else {
@@ -190,17 +190,16 @@ function cityOrZip() {
 
         let API = "AIzaSyBFwhu5GMslIWnZMlLT8ZGvnG-3tzrWOKM";
         let City = data.name;
-        console.log(City);
+        //console.log(City);
         
         let PhotoURL = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${City}&key=${API}&inputtype=textquery&fields=name,photos`;
-        
         
         async function apiFetch() {
             try {
               const response = await fetch(PhotoURL);
               if (response.ok) {
                 const newData = await response.json();
-                console.log(newData);
+                //console.log(newData);
                 displayImage(newData);
               } else {
                   throw Error(await response.text());
