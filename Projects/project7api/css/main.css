@@ -1,18 +1,24 @@
 body {
-    background-image: url();
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0%;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+}
+
+picture img.backgroundImage {
+    position: relative;
+    height: 100vh;
 }
 
 div.main {
-    background-color: steelblue;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: rgba(60, 66, 72, 0.5);
     border: 3px solid black;
     max-width: 20em;
     padding: 1em;
     margin-bottom: 1em;
-}
-
-div.input {
-    display: flex;
-    flex-direction: column;
 }
 
 label {
@@ -21,7 +27,7 @@ label {
 
 section {
     padding: 1em;
-    background-color: rgb(193, 227, 255);
+    background-color: rgba(69, 69, 69, 0.7);
 }
 
 section.input {
@@ -35,4 +41,38 @@ div.weather {
 
 input#submit {
     margin-top: 1em;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+input {
+    padding: .5em;
+}
+
+@media only screen and (min-width: 480px) {
+
+    picture img.backgroundImage {
+        width: auto;
+        height: 100vh;
+    }
+
+    div.main {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        background-color: rgba(60, 66, 72, 0.5);
+        border: 3px solid black;
+        max-width: 20em;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
 }

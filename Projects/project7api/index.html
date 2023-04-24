@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
+    <picture class="background">
+        <img id="backgroundImage" class="backgroundImage" src="" alt="">
+    </picture>
     <div class="main">
         <section class="heading">
             <h2>Search By Zip Code</h2>
@@ -26,15 +29,18 @@
         </section>
         <section class="weathercard">
             <div class="weather" id="weather-data">
-                <h2 id="city">City:<span></span></h2>
+                <h2 id="city">Current Weather<span></span></h2>
                 <p id="temp">Temp:<span></span></p>
                 <p id="feels_like">Feels Like:<span></span></p>
                 <p id="humidity">Humidity:<span></span></p>
+                <picture>          
+                    <img src="" alt="" id="icon">
+                    <p id="description"><span></span></p> 
+                </picture>   
+                <p><strong>Additional Info</strong></p>
                 <p id="wind_speed">Wind Speed:<span></span></p>
                 <p id="sunrise">Sunrise:<span></span></p>
-                <p id="sunset">Sunset:<span></span></p>             
-                <img src="" alt="" id="icon">
-                <p id="description">Description:<span></span></p>   
+                <p id="sunset">Sunset:<span></span></p>  
             </div>
         </section>
     </div>
