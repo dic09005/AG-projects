@@ -83,13 +83,12 @@ function cityOrZip() {
         
         let PhotoURL = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${City}&key=${API}&inputtype=textquery&fields=name,photos`;
         
-        
         async function apiFetch() {
             try {
               const response = await fetch(PhotoURL);
               if (response.ok) {
                 const newData = await response.json();
-                //console.log(newData);
+                console.log(newData);
                 displayImage(newData);
               } else {
                   throw Error(await response.text());

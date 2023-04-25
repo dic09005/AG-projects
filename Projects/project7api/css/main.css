@@ -71,7 +71,7 @@ input {
         left: 1em;
         background-color: rgba(60, 66, 72, 0.5);
         border: 3px solid black;
-        max-width: 20em;
+        width: 20em;
         padding: 1em;
         margin-bottom: 1em;
     }
