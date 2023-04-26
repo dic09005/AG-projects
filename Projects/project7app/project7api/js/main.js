@@ -80,6 +80,8 @@ function cityOrZip() {
         let API = "AIzaSyBFwhu5GMslIWnZMlLT8ZGvnG-3tzrWOKM";
         let City = data.name;
         //console.log(City);
+
+        // https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Seattle&key=AIzaSyBFwhu5GMslIWnZMlLT8ZGvnG-3tzrWOKM&inputtype=textquery&fields=name,photos
         
         let PhotoURL = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${City}&key=${API}&inputtype=textquery&fields=name,photos`;
         
