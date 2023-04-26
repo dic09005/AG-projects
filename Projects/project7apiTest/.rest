@@ -1,1 +1,3 @@
 GET http://localhost:3000 HTTP/1.1
+
+// FOR this to work you need to get the REST Client extension
