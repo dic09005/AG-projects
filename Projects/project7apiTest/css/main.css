@@ -49,8 +49,11 @@ picture {
 
 div.input {
     display: flex;
-    flex-direction: column;
     padding: .5em;
+}
+
+input#submit {
+    border-radius: 50%;
 }
 
 input {

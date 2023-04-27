@@ -17,19 +17,16 @@
         <img id="backgroundImage" class="backgroundImage" src="images/sunrise.jpg" alt="background">
     </picture>
     <div class="main">
-        <section class="heading">
-            <h2>Search By Zip Code</h2>
-        </section>
         <section class="input">
             <div class="input">
-                <label for="location">Please enter a location</label>
+                <label for="location"></label>
                 <input type="text" id="location" placeholder="City/Zip">
-                <input id="submit" type="submit" onclick="cityOrZip()">
+                <img src="images/search.png" alt="icon" onclick="cityOrZip()">
             </div>
         </section>
         <section class="weathercard">
             <div class="weather" id="weather-data">
-                <h2 id="city">Current Weather<span></span></h2>
+                <h2 id="city">Weather<span></span></h2>
                 <p id="temp">Temp:<span></span></p>
                 <p id="feels_like">Feels Like:<span></span></p>
                 <p id="humidity">Humidity:<span></span></p>
