@@ -13,10 +13,10 @@ picture img.backgroundImage {
 div.main {
     position: absolute;
     top: 1em;
-    left: 1em;
-    background-color: rgba(60, 66, 72, 0.5);
-    border: 3px solid black;
-    max-width: 20em;
+    left: .5em;
+    background-color: rgba(49, 54, 58, 0.8);
+    border-radius: 20px;
+    width: 20em;
     padding: 1em;
     margin-bottom: 1em;
 }
@@ -27,7 +27,6 @@ label {
 
 section {
     padding: 1em;
-    background-color: rgba(69, 69, 69, 0.7);
 }
 
 section.input {
@@ -67,12 +66,8 @@ input {
 
     div.main {
         position: absolute;
-        top: 1em;
-        left: 1em;
-        background-color: rgba(60, 66, 72, 0.5);
-        border: 3px solid black;
-        max-width: 20em;
-        padding: 1em;
-        margin-bottom: 1em;
+        top: 20%;
+        left: auto;
+        right: 10%;
     }
 }
