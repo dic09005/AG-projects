@@ -52,8 +52,14 @@ div.input {
     padding: .5em;
 }
 
-input#submit {
-    border-radius: 50%;
+input#location {
+    border-radius: 10px;
+}
+
+div.btn {
+    margin-left: .25em;
+    border-radius: 20px;
+    background-color: rgb(240, 248, 255, 0.5);
 }
 
 input {
