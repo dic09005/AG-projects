@@ -13,10 +13,10 @@ picture img.backgroundImage {
 div.main {
     position: absolute;
     top: 1em;
-    left: 1em;
-    background-color: rgba(60, 66, 72, 0.5);
-    border: 3px solid black;
-    max-width: 20em;
+    left: .5em;
+    background-color: rgba(49, 54, 58, 0.8);
+    border-radius: 20px;
+    width: 20em;
     padding: 1em;
     margin-bottom: 1em;
 }
@@ -27,7 +27,6 @@ label {
 
 section {
     padding: 1em;
-    background-color: rgba(69, 69, 69, 0.7);
 }
 
 section.input {
@@ -50,8 +49,17 @@ picture {
 
 div.input {
     display: flex;
-    flex-direction: column;
     padding: .5em;
+}
+
+input#location {
+    border-radius: 10px;
+}
+
+div.btn {
+    margin-left: .25em;
+    border-radius: 20px;
+    background-color: rgb(240, 248, 255, 0.5);
 }
 
 input {
@@ -67,12 +75,8 @@ input {
 
     div.main {
         position: absolute;
-        top: 1em;
-        left: 1em;
-        background-color: rgba(60, 66, 72, 0.5);
-        border: 3px solid black;
-        width: 20em;
-        padding: 1em;
-        margin-bottom: 1em;
+        top: 20%;
+        left: auto;
+        right: 10%;
     }
 }
