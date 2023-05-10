@@ -2,13 +2,6 @@
 
 require('dotenv').config();
 
-// app.ts
-function greet(name) {
-    console.log(`Hello, ${name}!`);
-}
-greet('John');
-
-
 let value = "Seattle";
 let savedValue = value;    
 
@@ -24,8 +17,6 @@ async function apiFetch() {
         if (response.ok) {
         const data = await response.json();
         console.log(data);
-        // displayWeather(data);
-        // getAndDisplay(data);
         } else {
             throw Error(await response.text());
         }
