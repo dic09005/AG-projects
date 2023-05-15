@@ -103,6 +103,7 @@ function cityOrZip() {
             weatherIcon.setAttribute('alt', desc);
             description.textContent = capitalize(desc);
         };
+        
 
         function getAndDisplay(data) {
 
