@@ -1,0 +1,12 @@
+CB V3 API 
+
+Presentor Tori Blount 
+
+for support email - apisupport@corebridge.net
+
+documentation - https://api-portal.corebridge.net/
+
+ - https://corebridgev3.azure-api.net/core
+
+Core - GET Commands 
+Config - PUT and DELETE Commands
