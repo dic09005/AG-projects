@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/seamless_paper_texture.png);
+}
+
+.scrapbook{
+  width: 590px;
+  height: 790px;
+  
+
+  
+
+}
+  .l{
+      border-top-left-radius: 80px 5px; 
+     border-bottom-left-radius: 80px 5px;
+  }
+  
+  .r{
+    border-top-right-radius: 80px 5px; 
+    border-bottom-right-radius: 80px 5px;
+  }
+.hard {
+  
+
+    font-size: 150%;
+    
+    h4{
+        font-family: "Indie Flower", cursive;
+        color:white;
+    }
+    
+    font-family: 'Zilla Slab Highlight', cursive;
+    color:red !important;
+        box-shadow: 0 0 10px #999;
+    border-top-left-radius: 0px !important;
+    background-color: red !important;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/black_paper.png) !important;
+    text-align: center;
+    color: white;
+    height: 610px;
+}
+ 
+#magazine {
+  margin: auto;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/seamless_paper_texture.png) !important;
+  .page {
+     z-index:1000 !important;
+    
+    background-color: grey;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/linedpaper.png);
+    border: solid 1px grey;
+
+    .top-margin {
+      height: 14px;
+    }
+
+    p {
+      margin: 0px;
+      margin-top: 1px;
+      margin-left: 10px;
+    }
+
+    /* //line-height: 2.5;
+    //padding: 14px; */
+  }
+  
+  
+  
+  
+}
+#magazine .turn-page {
+  background-color: #ccc;
+}
+
+
+#magazine .shadow{
+      position: relative;
+  box-shadow: 0 4px 10px #666;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/black_paper.png);
+      z-index:-1000 !important;
+}
+
+.image-one{
+  width:300px;
+  height:199px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 4px grey;
+   transform: skew(5deg, -5deg);
+}
+
+
+.doodle{
+  margin-left:18px;
+  color:grey;
+      font-size: 80%;
+      transform: skew(35deg, -35deg);
+}
+
+.centered{
+  color:blue;
+  margin-left: 20px;
+        transform: skew(5deg, -5deg);
+}
+
+.networking{
+    background-image: url();
+    background-size: contain;
+  background-repeat: no-repeat;
+  width:510px;
+  right: 48px;
+  height:390px;
+    border:solid 15px white;
+    box-shadow: 0 4px 10px lightgrey;
+  transform: skew(3deg, -3deg);
+  &:after{
+    content:'A bit of networking before the ceremony!';
+    left: 20%;
+      bottom:0px;
+    position:absolute;
+    color: blue;
+  }
+}
+
+.vote-for-me{
+    background-image: url();
+    background-size: contain;
+  background-repeat: no-repeat;
+  width:910px;
+  right: 48px;
+  height:390px;
+}
+
+.reading-award{
+  position:absolute;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 48px;
+  height:390px;
+  top: 100px;
+  border: solid 15px white;
+      box-shadow: 0 4px 10px lightgrey;
+  width:233px;
+    transform: skew(-7deg, 7deg);
+}
+
+.dan-marsh{
+  position:absolute;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:330px;
+  width:190px;
+    top: 100px;
+  left:30px;
+  border: solid 15px white;
+      box-shadow: 0 4px 10px lightgrey;
+      transform: skew(7deg, -7deg);
+}
+
+.heart-rate{
+  position:absolute;
+    background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:300px;
+  width:140px;
+  border:solid 15px white;
+    box-shadow: 0 4px 10px lightgrey;
+  transform: skew(8deg, -8deg);
+  right:30px;
+  bottom:50px;
+}
+
+.recieving-award{
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:370px;
+  width:570px;
+    border:solid 15px white;
+    box-shadow: 0 4px 10px lightgrey;
+}
+
+.london-bridge-postcard{
+      width:370px;
+  margin-left: 30px;
+  height:300px;
+  background-image: url();
+      background-size: contain;
+  background-repeat: no-repeat;
+
+        transform: skew(-15deg, 15deg);
+}
+
+.glaziers-hall{
+  margin:10px;
+    margin-top:30px;
+  margin-left:auto;
+   margin-right:auto;
+    background-image: url();
+  border: solid 20px white;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:285px;
+  height:200px;
+    background-size: contain;
+  background-repeat: no-repeat;
+
+        transform: skew(15deg, -15deg);
+}
+
+.red-marker{
+  color:rgb(153,0,0);
+  font-weight: bold;
+}
+
+.blue-marker{
+  color:blue;
+  font-weight: bold;
+}
+
+.skew-3{
+  color:blue;
+  position:absolute;
+  bottom:220px;
+    right:250px;
+    transform: skew(-15deg, 15deg);
+}
+
+.skew-2{
+    margin-left: 380px;
+    transform: skew(-15deg, 15deg);
+}
+
+.pencil-sketch-award{
+  position:absolute;
+  left: 150px;
+  top: 160px;
+  width:300px;
+  height:400px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 1px lightgrey;
+   transform: skew(-4deg, 4deg);
+  &:before{
+        width:90px;
+    height:25px;
+    opacity:0.4;
+    left:-20px;
+    bottom:0px;
+    position:absolute;
+    content:'';
+      background:DarkKhaki;
+    transform: skew(-45deg, 45deg);
+  }
+  
+  &:after{
+    width:90px;
+    height:25px;
+    opacity:0.4;
+    right:-10px;
+    top:16px;
+    position:absolute;
+    content:'';
+      background:DarkKhaki;
+    transform: skew(-45deg, 45deg);
+  }
+}
+
+.image-two{
+  position:absolute;
+  left: 60px;
+  width:166px;
+  height:250px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 2px lightgrey;
+   transform: skew(-4deg, 4deg);
+  &:after{
+    width:100px;
+    height:30px;
+    opacity:0.7;
+    left:97px;
+    top:10px;
+    position:absolute;
+    content:'';
+      background:DarkKhaki;
+    transform: skew(-35deg, 35deg);
+  }
+}
